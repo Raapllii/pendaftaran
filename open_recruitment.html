@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles_regis.css" />
+    <title>Ludiflex | Login & Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <p><img src="/image/logo.PNG " width="125" /></p>
+        </div>
+        <div class="nav-menu" id="navMenu"></div>
+        <div class="nav-button"></div>
+      </nav>
+
+      <!----------------------------- Form box ----------------------------------->
+      <div class="form-box">
+        <div class="register-container" id="register">
+          <div class="top">
+            <header class="campus-personal-use">
+              PENDAFTARAN UKM MUSIK POLITANI 2024
+            </header>
+          </div>
+          <div class="two-forms">
+            <script type="text/javascript">
+              var submmit = false;
+            </script>
+            <iframe
+              name="hidenConfirm"
+              id="hidenConfirm"
+              style="display: none"
+              onload="if(submmit){window.location='terimaKasih.html';}"
+            ></iframe>
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLSdpVfF_dPDLQijHX654rSvkyXKUI6tvaNEw22AhsShKnzYByQ/formResponse
+            "
+              method="post"
+              target="hidenConfirm"
+              onsubmit="submmit=true"
+            >
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="entry.2005620554"
+                  class="input-field"
+                  placeholder="Nama"
+                />
+                <i class="bx bx-user"></i>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="entry.809301291"
+                  class="input-field"
+                  placeholder="NIM"
+                />
+                <i class="bx bx-user"></i>
+              </div>
+
+              <div class="two-forms">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    name="entry.1942590659"
+                    class="input-field"
+                    placeholder="Prodi"
+                  />
+                  <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                  <input
+                    type="text"
+                    name="entry.1166974658"
+                    class="input-field"
+                    placeholder="Nomor Hp"
+                  />
+                  <i class="bx bx-envelope"></i>
+                </div>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  class="input-field"
+                  name="entry.839337160"
+                  placeholder="pengalaman di bidang musik"
+                />
+                <i class="bx bx-envelope"></i>
+              </div>
+              <div class="input-box">
+                <input type="submit" class="submit" value="Register" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myMenuFunction() {
+        var i = document.getElementById("navMenu");
+
+        if (i.className === "nav-menu") {
+          i.className += " responsive";
+        } else {
+          i.className = "nav-menu";
+        }
+      }
+    </script>
+
+    <script>
+      var a = document.getElementById("loginBtn");
+      var b = document.getElementById("registerBtn");
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+
+      function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+      }
+
+      function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+      }
+    </script>
+    <script>
+      // Fungsi untuk memperbesar input berdasarkan panjang teks
+      function resizeInput(input) {
+        // Menyeting lebar input berdasarkan panjang teks
+        input.style.width = input.value.length + 1 + "ch";
+      }
+    </script>
+  </body>
+</html>

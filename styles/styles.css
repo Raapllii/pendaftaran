@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("/image/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Akira Expanded";
+  src: url("../styles/fonts/AkiraExpanded-SuperBold.woff2") format("woff2"),
+    url("../styles/fonts/AkiraExpanded-SuperBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.akira-expanded {
+  font-family: "Akira Expanded", system-ui;
+  font-size: 36px;
+  font-style: normal;
+  color: #fff8ea;
+}
+
+@font-face {
+  font-family: "Campus Personal Use";
+  src: url("../fonts/CAMPUS-PERSONAL-USE.woff2") format("woff2"),
+    url("../fonts/CAMPUS-PERSONAL-USE.woff") format("woff"),
+    url("../fonts/CAMPUS-PERSONAL-USE.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.campus-personal-use {
+  font-family: "Campus Personal Use", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+.terimakasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(100px);
+}
+
+.container-thx h2 {
+  align-items: center;
+  font-size: 48px;
+  margin: 0;
+  text-transform: uppercase;
+  transform: translateY(-170px);
+}
+.container-thx p {
+  text-transform: uppercase;
+  align-items: center;
+  letter-spacing: normal; /* Atur jarak antar huruf normal */
+  word-spacing: normal;
+  max-width: 700px; /* Batasi lebar maksimal 600px */
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  transform: translateY(-130px);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+
+textarea {
+  min-height: 50px;
+  resize: none;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #fff;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #1a1a1a;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
